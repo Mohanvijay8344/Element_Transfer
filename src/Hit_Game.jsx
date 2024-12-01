@@ -52,11 +52,8 @@ function Hit_Game() {
         <h1 className='text-center font-bold text-3xl mt-5 mb-2'>Hit Game</h1>
         <h1 className='text-center font-bold text-2xl'>Points: {score}</h1> 
         <h1 className='text-center font-bold text-2xl'>Time left: {timeOuts} secounds</h1>
-        <div className='btns'>
-
-        <button onClick={() => reset()} className='text-center w-13'>Restart</button>
-        </div>
-        <div className='flex justify-center items-center'>
+        
+        <div className='flex justify-center items-center m-10'>
         <div
         style={{
           display: "grid",
@@ -83,8 +80,11 @@ function Hit_Game() {
           </div>
         ))}
       </div>
-      
     </div>
+      <div >
+
+        <button onClick={() => reset()} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5 mx-auto block mb-10'>Restart</button>
+        </div>
     </div>
     
   )
