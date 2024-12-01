@@ -76,7 +76,6 @@ function Nested_List() {
   const handle_first_child = (index) => {
     setChild2(data[index].children); 
     
-    // Toggle selection for the clicked item
     const newSelectedItems = selectedItems.includes(index) ? selectedItems.filter((selectedItem) => selectedItem !== index) : [index]; 
     
     setSelectedItems(newSelectedItems);
